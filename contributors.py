@@ -23,6 +23,7 @@ def extract_info(json_data):
     info = {}
 
     try:
+        info['name'] = json_data['name']
         info['login'] = json_data['login']
         info['company'] = json_data['company']
         info['blog'] = json_data['blog']
